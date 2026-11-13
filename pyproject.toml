@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "melaps-agent"
+version = "0.4.2"
+description = "Node agent for Melaps System GPU clusters (telemetry + job execution)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31"]
+authors = [{name = "Melaps System"}]
+
+[project.scripts]
+melaps-agent = "melaps_agent.agent:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,7 @@
+# Copy to /etc/melaps/agent.toml and set MELAPS_AGENT_KEY.
+node_id = "m1-n03"
+cluster = "m1"
+api_base = "https://api.melaps.system/v1"
+heartbeat_interval = 15
+telemetry_interval = 5
+workdir = "/var/lib/melaps/jobs"
